@@ -3,6 +3,7 @@ from player import *
 import input as input_local
 import ai as ai
 
+list_roulette_table = []
 
 def main_menu():
     print('Welcome to the Simple Roulette!')
@@ -17,6 +18,8 @@ def main_menu():
     if option == 3:
         print('Return to main menu - Not implemented')
         #main.main_menu()
+
+#def init_table():
 
 
 def game():

@@ -1,6 +1,6 @@
 import input as input_local
 
-import games.simple_roulette as simple_roulette
+import games.simple_roulette.game as simple_roulette
 
 
 class Game:
