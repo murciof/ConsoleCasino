@@ -1,9 +1,11 @@
 from player import *
+from games.simple_roulette.table import *
 #import main as main
 import input as input_local
 import ai as ai
 
 list_roulette_table = []
+
 
 def main_menu():
     print('Welcome to the Simple Roulette!')
@@ -19,9 +21,9 @@ def main_menu():
         print('Return to main menu - Not implemented')
         #main.main_menu()
 
-#def init_table():
-
 
 def game():
+    init_roulette_table(list_roulette_table)
+    display_roulette_table(list_roulette_table)
     ai_player = ComputerPlayer(1000, 1)
     ai.martingale(ai_player, 0)
